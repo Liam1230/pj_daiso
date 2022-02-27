@@ -126,10 +126,10 @@
 
 .h-history__label-top {
   position: fixed;
-  left: 0;
+  left: rem(-10);
   bottom: 34.375vh;
   z-index: 103;
-  width: rem(40);
+  width: rem(50);
   height: 57vh;
   border-radius: 0 rem(20) 0 0;
   border: 1px solid $white;
@@ -148,10 +148,10 @@
 
 .h-history__label-bottom {
   position: fixed;
-  left: 0;
+  left: rem(-10);
   bottom: 0;
   z-index: 103;
-  width: rem(40);
+  width: rem(50);
   height: 34.375vh;
   border: 1px solid $pink;
   border-top: none;
