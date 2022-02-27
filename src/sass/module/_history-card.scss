@@ -1,0 +1,95 @@
+@use "global" as *;
+
+.history-card {
+  position: relative;
+  width: rem(300);
+
+  @include mq("md") {
+    width: rem(418);
+  }
+}
+
+.history-card__label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  transform: translateY(-50%);
+  background-color: $white;
+  display: inline-block;
+  border-radius: 0 rem(16) rem(16) 0;
+  color: $pink;
+  font-size: rem(19);
+  font-weight: bold;
+  padding: rem(3) rem(14);
+  @include mq("md") {
+    font-size: rem(26);
+    padding: rem(3) rem(22);
+  }
+}
+
+.history-card__plus {
+  width: rem(26);
+  height: rem(26);
+  position: absolute;
+  top: rem(12);
+  right: rem(12);
+  z-index: 2;
+}
+
+.history-card__img-wrapper {
+  border: 2px solid $white;
+  overflow: hidden;
+  margin-bottom: rem(6);
+  border-radius: 0 rem(30) rem(30) rem(30);
+  transition: 0.5s all;
+  @include mq("md") {
+    border-radius: 0 rem(43) rem(43) rem(43);
+  }
+}
+
+.history-card__img-wrapper img {
+  transition: 0.5s all;
+}
+
+@include mq("md") {
+  .history-card__img-wrapper img:hover {
+    transition: 0.5s all;
+    transform: scale(1.3);
+  }
+}
+
+.history-card__text {
+  font-size: rem(12);
+  @include mq("md") {
+    font-size: rem(14);
+  }
+}
+
+.history-section.last {
+  padding-top: rem(20);
+}
+
+.history-section__coming {
+  display: block;
+  width: rem(156);
+  opacity: 0;
+}
+
+.history-section__coming_anim {
+  animation-name: anim_section__coming;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim_section__coming {
+  0% {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

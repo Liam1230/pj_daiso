@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.count-down {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  @include mq("md") {
+    margin-top: rem(-30);
+    position: relative;
+    left: 13%;
+    justify-content: initial;
+    z-index: -1;
+  }
+}
+
+.count-down__title {
+  font-weight: bold;
+  font-size: rem(16);
+  @include mq("md") {
+    padding-top: rem(7);
+    font-size: rem(24);
+    margin-right: rem(7);
+  }
+}
+
+.count-down__timer {
+  font-size: rem(20);
+  font-weight: bold;
+  @include mq("md") {
+    font-size: rem(28);
+  }
+}
+
+.count-down__date,
+.count-down__hour,
+.count-down__min,
+.count-down__sec {
+  font-family: $sub-font;
+  font-weight: bold;
+  font-size: rem(32);
+  @include mq("md") {
+    font-size: rem(49);
+  }
+}

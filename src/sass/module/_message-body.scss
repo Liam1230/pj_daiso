@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.message-body {
+  @include mq("md")  {
+    min-width: 980px;
+  }
+}

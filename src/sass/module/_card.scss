@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.card {
+  position: relative;
+}
+
+.card__img {
+  overflow: hidden;
+  border-radius: rem(35);
+  transition: all 0.5s;
+}
+
+.card__img img {
+  margin-bottom: rem(10);
+}
+
+.card__head {
+  font-size: rem(24);
+  font-weight: bold;
+  margin-bottom: rem(7);
+}
+
+.contents__item:nth-child(2) {
+  .card__head {
+    font-size: rem(16);
+    padding: rem(5);
+    @include mq("md") {
+      font-size: rem(28);
+    }
+  }
+}
+
+.card__text {
+  @include mq("md") {
+    font-size: rem(15);
+  }
+}

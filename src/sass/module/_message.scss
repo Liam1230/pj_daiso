@@ -1,0 +1,73 @@
+@use "global" as *; 
+
+.message-wrapper {
+  position: relative;
+  z-index: -10;
+  background-color: $pink;
+}
+
+.message {
+  padding-top: rem(69);
+  color: $white;
+  text-align: center;
+  position: relative;
+  z-index: -2;
+}
+
+.message__title.top-section-title {
+  color: $white;
+  margin-bottom: rem(25);
+  @include mq("md") {
+   margin-bottom: rem(37); 
+  }
+}
+
+.message__message {
+  font-size: rem(18);
+  font-weight: bold;
+  line-height: 1.66666667;
+  margin-bottom: rem(37);
+  @include mq("md") {
+   font-size: rem(30); 
+  }
+}
+
+.message__text {
+  font-size: rem(16);
+  line-height: 1.875;
+  margin-bottom: rem(64);
+  letter-spacing: -1.2px;
+  @include mq("md") {
+   font-size: rem(18); 
+   max-width: rem(753);
+   margin: 0 auto;
+   margin-bottom: rem(90);
+   letter-spacing: 1px;
+  }
+}
+
+.message__text-in {
+  letter-spacing: -2.8px;
+  @include mq("md") {
+    letter-spacing: 1px;
+  }
+}
+
+.message__track {
+  display: inline-block;
+  width: rem(137);
+  margin: 0 auto;
+  opacity: 0.8;
+  @include mq("md") {
+   width: rem(165); 
+  }
+}
+
+.message__track.slide-left {
+  transform: translateX(-100vw);
+  transition: 3s;
+}
+
+.message__track.slide-left.active {
+  transform: translateX(0);
+}

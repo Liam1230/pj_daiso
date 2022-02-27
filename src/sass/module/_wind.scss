@@ -1,0 +1,108 @@
+@use "global" as *;
+
+.wind {
+    display: flex;
+    position: fixed;
+    z-index: 105;
+    overflow: hidden;
+    width: 100vw;
+    @include mq("md") {
+      max-height: rem(1);
+    }
+  }
+  
+  .wind--top {
+    top: 14%;
+  }
+
+  .wind--top1-2 {
+    top: 24%;
+    display: none;
+    @include mq("md") {
+      display: block;
+    }
+  }
+  
+  .wind--middle {
+    top: 45%;
+  }
+  
+  .wind--middle2 {
+    top: 56%;
+  }
+
+.wind--middle2-1 {
+  top: 48%;
+  display: none;
+  @include mq("md") {
+   display: block;
+  }
+}
+  
+  .wind--bottom {
+    bottom: 10%;
+  }
+
+.wind--bottom1 {
+  bottom: 15%;
+  display: none;
+  @include mq("md") {
+   display: block;
+  }
+}
+  
+  .wind--top {
+    animation: wind-top 4s infinite linear 0s both;
+  }
+  .wind--top1-2 {
+    animation: wind-top 4s infinite linear 1s both;
+  }
+  .wind--middle {
+    animation: wind-middle 3s infinite linear 2s both;
+  }
+  .wind--middle2 {
+    animation: wind-middle2 5s infinite linear 0s both;
+  }
+  .wind--middle2-1 {
+    animation: wind-bottom 3s infinite linear 0s both;
+  }
+  .wind--bottom {
+    animation: wind-bottom 4s infinite linear 1s both;
+  }
+  .wind--bottom1 {
+    animation: wind-bottom 3s infinite linear 3s both;
+  }
+  
+  @keyframes wind-top {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes wind-middle {
+    from {
+      transform: translateX(110%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes wind-middle2 {
+    from {
+      transform: translateX(130%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes wind-bottom {
+    from {
+      transform: translateX(120%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  

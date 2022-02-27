@@ -1,0 +1,46 @@
+@use "global" as *;
+
+.special__catch {
+  margin: 0 auto;
+  max-width: rem(300);
+  @include mq("md") {
+   max-width: rem(330); 
+  }
+}
+
+.special__title {
+  text-align: center;
+  margin-bottom: rem(30);
+}
+
+.special__cards {
+  @include mq("md") {
+   display: flex;
+   flex-wrap: wrap; 
+   margin-bottom: rem(-42);
+  }
+}
+
+.special__card {
+  @include mq("md") {
+    width: calc(25% - 45px);
+    margin-right: 60px; 
+  }
+}
+
+.special__card:nth-of-type(4n) {
+  @include mq("md") {
+    margin-right: 0;
+  }
+}
+
+.special__card:not(:last-of-type) {
+  margin-bottom: rem(42);
+}
+
+.special__card .update {
+  position: absolute;
+  top: 0;
+  right: rem(12);
+  transform: translate(50%, -50%);
+}

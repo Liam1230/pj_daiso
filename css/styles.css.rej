@@ -1,0 +1,9 @@
+diff a/css/styles.css b/css/styles.css	(rejected hunks)
+@@ -1,7 +1,6 @@
+ @charset "UTF-8";
+ body {
+   position: relative;
+-  font-family: "'Noto Sans JP', sans-serif";
+   font-family: "Noto Sans JP", sans-serif;
+   z-index: -9999;
+ }

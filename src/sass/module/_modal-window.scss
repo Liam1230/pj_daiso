@@ -1,0 +1,101 @@
+@use "global" as *;
+
+.modal-window__head-top {
+  font-size: rem(16);
+  display: block;
+  margin-bottom: rem(6);
+}
+
+.modal-window__head {
+  display: inline-block;
+  max-width: rem(236);
+  color: #fff;
+  background-color: $pink;
+  font-size: rem(24);
+  margin-bottom: rem(6);
+  padding: rem(29) rem(49) rem(24) rem(19);
+  font-weight: bold;
+  border-radius: 0 0 rem(20) 0;
+  @include mq("md") {
+    font-size: rem(24);
+    padding: rem(29) rem(49) rem(24) rem(60);
+    max-width: rem(416);
+    border-radius: rem(20) 0 rem(20) 0;
+  }
+}
+
+.modal-window--2 .modal-window__head {
+  // max-width: rem(430);
+}
+
+/* モーダルウィンドウ */
+.modal-window {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $white;
+  border-radius: 5px;
+  z-index: 9998;
+  @include mq("md") {
+    background-color: transparent;
+  }
+}
+
+.modal-window--2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $white;
+  border-radius: 5px;
+  z-index: 9998;
+  @include mq("md") {
+    background-color: transparent;
+  }
+}
+
+.modal-window__overray {
+  position: relative;
+  height: 100vh;
+  background-color: rgba($color: $white, $alpha: 0.6);
+  @include mq("md") {
+    padding-top: 7%;
+  }
+}
+
+.modal-window__body {
+  @include mq("md") {
+    position: relative;
+    background-color: $white;
+    max-width: rem(765);
+    margin: 0 auto;
+    border-radius: rem(20);
+  }
+}
+
+/* 閉じるボタン */
+.button-close {
+  position: absolute;
+  top: 5%;
+  right: -1%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.button-close img {
+  width: rem(19);
+  height: rem(19);
+}
+
+.modal-window__text {
+  padding: rem(23) rem(50) rem(50);
+  overflow: scroll;
+  height: 66vh;
+  line-height: 1.875;
+}

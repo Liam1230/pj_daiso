@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.tab-box__btn {
+	cursor: pointer;
+	transition: all 0.2s ease 0s;
+}
+
+.tab-box__panel {
+    display:none;
+}
+
+.tab-box__panel.active {
+    display:block;
+}

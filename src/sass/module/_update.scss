@@ -1,0 +1,15 @@
+@use "global" as *;
+
+p.update {
+  width: rem(60);
+  line-height: 1;
+  padding: rem(16) 0 ;
+  color: $pink;
+  font-size: rem(12);
+  font-weight: bold;
+  font-family: $sub-font;
+  text-align: center;  
+  background-color: $white;
+  border-radius: 50%;
+  box-shadow: 0 0 rem(30) rgba($color: #F2157F, $alpha: 0.4);
+}

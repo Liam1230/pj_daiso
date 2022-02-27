@@ -1,0 +1,51 @@
+@use "global" as *;
+
+.banner-area {
+  position: relative;
+}
+
+.banner-area__cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: rem(-21);
+}
+
+.banner-area__card {
+  margin-bottom: rem(21);
+  width: calc(50% - 11px);
+  overflow: hidden;
+  transition: all 0.5s;
+  border-radius: rem(25);
+  border: 1px solid #d1d1d1;
+  position: relative;
+  z-index: 1;
+  @include mq("md") {
+    width: calc(25% - 45px);
+    margin-right: 60px;
+  }
+}
+
+.banner-area__card img {
+  transition: 0.5s all;
+  border-radius: rem(25);
+}
+
+@include mq("md") {
+  .banner-area__card img:hover {
+    transform: scale(1.2, 1.2);
+    transition: 0.5s all;
+  }
+}
+
+.banner-area__card:nth-of-type(4n) {
+  @include mq("md") {
+    margin-right: 0;
+  }
+}
+
+.banner-area__card:nth-of-type(odd) {
+  margin-right: 21px;
+  @include mq("md") {
+    margin-right: 60px;
+  }
+}

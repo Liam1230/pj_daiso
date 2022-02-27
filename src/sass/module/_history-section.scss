@@ -1,0 +1,160 @@
+@use "global" as *;
+
+.history-section {
+  width: 100vw;
+  padding: 0 50vw;
+  position: relative;
+  margin-right: rem(-1);
+}
+
+.history-section.long::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  bottom: 34.375vh;
+  top: 50%;
+  height: rem(400);
+  transform: translateY(-50%);
+  width: rem(2);
+  background-color: $white;
+  @include mq("md") {
+    height: 370px;
+  }
+}
+
+.history-section__top {
+  color: $white;
+  // padding-top: rem(125);
+  padding-top: 10vh;
+  position: relative;
+}
+
+.history-section__bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 34.375vh;
+  z-index: 0;
+}
+
+.history-section__title {
+  text-align: center;
+  font-size: rem(24);
+  margin-bottom: rem(24);
+  background-image: url(../images/history/sougyou_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  @include mq("md") {
+    font-size: rem(40);
+  }
+}
+
+.history-section__copy {
+  white-space: normal;
+  margin-bottom: rem(45);
+  min-width: rem(240);
+  @include mq("md") {
+    font-size: rem(18);
+    line-height: 2.22222222;
+    min-width: rem(357);
+  }
+}
+
+.history-section__message {
+  padding-top: rem(44);
+  text-align: center;
+  color: $pink;
+  font-size: rem(18);
+  font-weight: bold;
+  line-height: 2.22222222;
+}
+
+.history-section.long {
+  padding: 0 120vw;
+  @include mq("md") {
+    padding: 0 50vw;
+  }
+}
+
+.history-section.long .history-section__bottom::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: rem(18);
+  height: rem(18);
+  border-radius: 50%;
+  background-color: $pink;
+  border: 2px solid $white;
+}
+
+.history-section__year {
+  position: absolute;
+  top: 26%;
+  left: -87%;
+  display: inline-block;
+  -webkit-transform: perspective(0) translateZ(-10px) scale(5);
+  transform: perspective(0) translateZ(-10px) scale(5);
+  width: rem(272);
+  height: rem(146);
+}
+
+.history-section__year-text {
+  position: absolute;
+  left: 50%;
+  top: rem(20);
+  font-size: rem(24);
+  font-family: $sub-font;
+  font-weight: bold;
+  color: $pink;
+  margin-left: -42px;
+  @include mq("md") {
+    font-size: rem(28);
+  }
+}
+
+.history-section__year-text2 {
+  position: absolute;
+  left: 50%;
+  top: rem(20);
+  transform: translateX(-50%);
+  font-size: rem(24);
+  font-family: $sub-font;
+  font-weight: bold;
+  color: $pink;
+  margin-left: -42px;
+  opacity: 0;
+  @include mq("md") {
+    font-size: rem(28);
+  }
+}
+
+.history-section__year-text_anim {
+  animation-name: anim_section__year-text;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim_section__year-text {
+  0% {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.swipeup-icon {
+  width: rem(150);
+  height: rem(150);
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

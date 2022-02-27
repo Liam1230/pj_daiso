@@ -1,0 +1,107 @@
+@use "global" as *;
+
+.body-bg {
+  position: fixed;
+  z-index: -1;
+  opacity: 0.3;
+  @include mq("md") {  
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.body-bg.right {
+  top: rem(70);
+  right: rem(-20);
+  text-align: right;
+  @include mq("md") { 
+    right: rem(60);
+    top: rem(90);
+  }
+}
+
+.body-bg.left {
+  left: rem(-20);
+  top: rem(410);
+  @include mq("md") {
+   top: rem(640); 
+   left: 50%;
+   z-index: -2;
+  }
+} 
+
+.body-bg__arrow {
+  display: inline-block;
+  width: rem(137);
+  @include mq("md") {
+    width: rem(235);
+  }
+}
+
+.body-bg.left .body-bg__arrow {
+  @include mq("md") {
+   transform: translateX(-2rem); 
+  }
+}
+
+.body-bg.right .body-bg__arrow {
+  @include mq("md") {
+    transform: translateX(-6rem); 
+  }
+}
+
+
+.low-body-bg {
+  position: fixed;
+  z-index: 1;
+  opacity:1;
+  @include mq("md") {  
+    opacity: 0.3;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.low-body-bg.pink {
+  opacity: 0.3;
+}
+
+.low-body-bg.right {
+  top: rem(70);
+  right: rem(-20);
+  text-align: right;
+  @include mq("md") { 
+    right: rem(60);
+    top: rem(90);
+  }
+}
+
+.low-body-bg.left {
+  left: rem(-20);
+  top: rem(410);
+  @include mq("md") {
+   top: rem(640); 
+   left: 50%;
+   z-index: 1;
+  }
+} 
+
+.low-body-bg__arrow {
+  display: inline-block;
+  width: rem(137);
+  @include mq("md") {
+    width: rem(235);
+  }
+}
+
+.low-body-bg.left .low-body-bg__arrow {
+  @include mq("md") {
+   transform: translateX(-2rem); 
+  }
+}
+
+.low-body-bg.right .low-body-bg__arrow {
+  @include mq("md") {
+    transform: translateX(-6rem); 
+  }
+}

@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.new {
+  width: rem(60);
+  line-height: 1;
+  padding: rem(21) 0 ;
+  color: $white;
+  font-size: rem(14);
+  font-weight: bold;
+  font-family: $sub-font;
+  text-align: center;  
+  background-color: $pink;
+  border-radius: 50%;
+}

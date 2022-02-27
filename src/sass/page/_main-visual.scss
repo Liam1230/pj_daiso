@@ -1,0 +1,257 @@
+@use "global" as *;
+
+.main-visual {
+  overflow: hidden;
+  padding-top: rem(20);
+  padding-bottom: rem(20);
+}
+
+.main-visual__slider-wrapper {
+  position: relative;
+}
+
+.main-visual__img {
+  text-align: center;
+  margin-right: rem(30);
+  position: relative;
+  max-width: rem(290);
+  @include mq("md") {
+    max-width: rem(855);
+    transition: all 0.5s;
+    &:hover:not(.no-hover) {
+      opacity: 0.7;
+    }
+  }
+}
+
+.main-visual__img-icon {
+  position: absolute;
+  top: rem(-19);
+  right: rem(-9);
+}
+
+.main-visual__prev,
+.main-visual__next {
+  display: none !important;
+  padding: rem(10);
+  @include mq("md") {
+    z-index: 2;
+    display: block !important;
+    width: rem(50);
+    height: rem(27);
+    position: absolute;
+    bottom: rem(-60);
+    filter: none !important;
+    cursor: pointer;
+    padding: rem(0) rem(60) rem(0) rem(0);
+  }
+}
+
+.main-visual__prev {
+  right: rem(74);
+}
+
+.main-visual__prev::after {
+  display: none !important;
+}
+@media screen and (min-width: 768px) {
+  .main-visual__prev::after {
+    z-index: 2;
+    content: "";
+    background-image: url(../images/top/prev.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block !important;
+    width: 1.375rem;
+    height: 1.6875rem;
+    position: absolute;
+    top: 0;
+    left: 2px;
+    -webkit-filter: none !important;
+    filter: none !important;
+    cursor: pointer;
+  }
+}
+
+.main-visual__prev::after {
+  opacity: 1;
+  left: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-visual__prev:hover::after {
+    -webkit-animation: prev-after 0.5s;
+    animation: prev-after 0.5s;
+  }
+}
+@-webkit-keyframes prev-after {
+  0% {
+    left: 20px;
+    opacity: 1;
+  }
+  50% {
+    left: 5px;
+    opacity: 0;
+  }
+  70% {
+    left: 35px;
+    opacity: 0;
+  }
+  75% {
+    left: 35px;
+    opacity: 1;
+  }
+  100% {
+    left: 20px;
+    opacity: 1;
+  }
+}
+@keyframes prev-after {
+  0% {
+    left: 20px;
+    opacity: 1;
+  }
+  50% {
+    left: 5px;
+    opacity: 0;
+  }
+  70% {
+    left: 35px;
+    opacity: 0;
+  }
+  75% {
+    left: 35px;
+    opacity: 1;
+  }
+  100% {
+    left: 20px;
+    opacity: 1;
+  }
+}
+
+@include mq("md") {
+  .main-visual__prev:hover {
+    animation-name: prev;
+    animation-duration: 0.3s;
+    // animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+  }
+}
+
+@keyframes prev {
+  0% {
+    cursor: pointer;
+    transform: translateX(0);
+  }
+  100% {
+    cursor: pointer;
+    transform: translateX(-10px);
+  }
+}
+
+.main-visual__next {
+  right: rem(27);
+}
+
+@include mq("md") {
+  .main-visual__next:hover {
+    animation-name: next;
+    animation-duration: 0.3s;
+    // animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+  }
+}
+
+@keyframes next {
+  0% {
+    cursor: pointer;
+    transform: translateX(0);
+  }
+  100% {
+    cursor: pointer;
+    transform: translateX(10px);
+  }
+}
+.main-visual__next::after {
+  display: none !important;
+}
+@media screen and (min-width: 768px) {
+  .main-visual__next::after {
+    z-index: 2;
+    content: "";
+    background-image: url(../images/top/next.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block !important;
+    width: 1.375rem;
+    height: 1.6875rem;
+    position: absolute;
+    top: 0;
+    right: 2px;
+    -webkit-filter: none !important;
+    filter: none !important;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-visual__next::after {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-visual__next:hover::after {
+    -webkit-animation: next-after 0.5s;
+    animation: next-after 0.5s;
+  }
+}
+@-webkit-keyframes next-after {
+  0% {
+    right: 0;
+    opacity: 1;
+  }
+  50% {
+    right: -15px;
+    opacity: 0;
+  }
+  70% {
+    right: 15px;
+    opacity: 0;
+  }
+  75% {
+    right: 15px;
+    opacity: 1;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+@keyframes next-after {
+  0% {
+    right: 0;
+    opacity: 1;
+  }
+  50% {
+    right: -15px;
+    opacity: 0;
+  }
+  70% {
+    right: 15px;
+    opacity: 0;
+  }
+  75% {
+    right: 15px;
+    opacity: 1;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}

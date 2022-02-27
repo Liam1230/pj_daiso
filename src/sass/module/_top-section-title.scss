@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.top-section-title {
+    font-size: rem(40);
+    font-weight: bold;
+    font-family: $sub-font;
+    color: $pink;
+    @include mq("md") {
+    font-size: rem(60);
+    }
+}

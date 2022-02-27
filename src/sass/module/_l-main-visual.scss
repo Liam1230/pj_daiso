@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.l-main-visual {
+  // margin-bottom: rem(10);
+  @include mq("md") {
+    margin-bottom: rem(20);
+
+  }
+}
+

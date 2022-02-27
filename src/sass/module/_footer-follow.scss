@@ -1,0 +1,66 @@
+@use "global" as *;
+
+.footer-follow {
+  @include mq("md") {
+    max-width: rem(191);
+  }
+}
+
+.footer-follow__title {
+  @include mq("md") {
+    text-align: center;
+    font-family: $sub-font;
+    font-size: rem(28);
+    font-weight: bold;
+  }
+}
+
+.footer-follow__message {
+  @include mq("md") {
+    font-size: rem(14);
+    font-weight: bold;
+    text-align: center;
+    color: $pink;
+    margin-bottom: rem(12);
+  }
+}
+
+.footer-follow__icons {
+  @include mq("md") {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.footer-follow__icon {
+  @include mq("md") {
+    transition: all 0.5s;
+    display: block;
+  }
+}
+
+.footer-follow__icon:hover {
+  @include mq("md") {
+    transition: all 0.5;
+    transform: scale(1.3);
+  }
+}
+
+.footer-follow__icon:first-child{
+  @include mq("md") {
+    width: rem(35);
+  }
+}
+
+.footer-follow__icon:nth-child(2){
+  @include mq("md") {
+    width: rem(42);
+  }
+}
+
+.footer-follow__icon:nth-child(3){
+  @include mq("md") {
+    width: rem(34);
+  }
+}

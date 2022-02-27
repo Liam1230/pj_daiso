@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.info-list__label {
+  margin-bottom: rem(12);
+  @include mq("md") {
+    display: inline-block;
+    margin-right: rem(28);
+    margin-bottom: rem(30);
+  }
+}
+
+.info-list__category {
+  font-size: rem(14);
+  background-color: $pink;
+  color: $white;
+  text-align: center;
+  display: inline-block;
+  padding: rem(5) rem(15);
+  margin-right: rem(19);
+  @include mq("md") {
+    min-width: rem(134);
+    padding: rem(5) rem(25);
+    margin-right: rem(24);
+  }
+}
+
+.info-list__date {
+  font-family: $sub-font;
+  color: #707070;
+}
+
+.info-list__content {
+  @include mq("md") {
+    transition: color 0.3s;
+    display: inline-block;
+    &:hover:not(.no-hover) {
+      color: $pink;
+    }
+  }
+}

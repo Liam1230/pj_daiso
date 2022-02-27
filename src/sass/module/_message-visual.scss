@@ -1,0 +1,51 @@
+@use "global" as *;
+
+.message-visual__inner {
+  position: relative;
+  z-index: 2;
+}
+
+.message-visual__title-wrapper {
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-56%, -50%);
+  @include mq("md") {
+    top: 23%;
+    transform: translateX(-104%);
+  }
+}
+
+.message-visual__title.top-section-title {
+  @include mq("md") {
+    font-size: rem(70);
+    // margin-bottom: 22%;
+  }
+}
+
+.message-visual__company {
+  font-size: rem(16);
+}
+
+.message-visual__name-wrapper {
+  background-color: #f6f6f6;
+}
+
+.message-visual__copy {
+  @include mq("md") {
+    font-size: rem(18);
+    color: $white;
+    line-height: 1.66666667;
+  }
+}
+
+.message-visual__name {
+  padding-top: rem(18);
+  padding-left: rem(20);
+  padding-right: rem(20);
+  padding-bottom: rem(221);
+  font-size: rem(20);
+  position: relative;
+  z-index: 2;
+}

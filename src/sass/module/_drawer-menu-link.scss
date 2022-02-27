@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.drawer-menu-link {
+    color: $white;
+    border-left: 1px solid $white;
+    
+}
+
+.drawer-menu-link  a {
+    display: block; 
+   
+}
+
+.drawer-menu-link__text {
+    font-weight: bold;
+    font-size: rem(18);
+    font-family: $sub-font;
+    white-space: nowrap;
+    padding-left: rem(10);
+    @include mq("md") {
+        font-size: rem(24);
+    }
+}
+
+.drawer-menu-link__sub-text {
+    display: block;
+    font-size: rem(12);
+    font-family: $base-font;
+    font-weight: normal;
+    @include mq("md") {
+    font-size: rem(14);
+    }
+}
+
+

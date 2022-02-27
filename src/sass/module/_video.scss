@@ -1,0 +1,65 @@
+@use "global" as *;
+
+#video-area {
+  position: fixed;
+  display: block;
+	bottom: 0;
+	left: 0;
+  top: 0;
+	overflow: hidden;
+	right: 0; /*最背面に設定*/
+	z-index: 9999;
+	background-color: #000;
+}
+
+// #video { /* 16:9の幅 → 9 ÷ 16 = 56.25% */
+// 	height: 56.25vw;
+// 	left: 50%;
+// 	min-height: 100vh;
+// 	min-width: 100%; /*天地中央配置*/
+// 	position: absolute;
+//   top: 50%;
+// 	transform: translate(-50%, -50%); 
+//   /*縦横幅指定*/ /* 16:9 の幅→16 ÷ 9＝ 177.77% */
+// 	width: 177.77777778vh;
+// 	z-index: -1;
+// 	@include mq("md") {
+//     min-height: auto;
+//   }
+// }
+
+#video {
+	height: auto;
+	width: 100vw;
+	position: absolute;
+  top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); 
+	z-index: -1;
+	@include mq("md") {
+		height: 115vh;
+		width: auto;
+  }
+}
+
+.video-area.is-active {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#btn_skip {
+	color: #333;
+	position: fixed;
+	bottom: 7%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.arrow {
+		width: rem(20);
+		height: rem(20);
+		position: fixed;
+		bottom: 7%;
+		left: 80%;
+		color: #333;
+}

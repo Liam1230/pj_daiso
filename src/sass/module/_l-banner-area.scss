@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.l-banner-area {
+    margin-bottom: rem(90);
+    @include mq("md") {
+        margin-bottom: rem(90);
+    }
+}

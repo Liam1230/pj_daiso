@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>ダイソー 50周年記念サイト</title>
+  <meta name="description"
+    content="2022年、ダイソーは創業50周年を迎えます。特設サイトでは、50年の歴史の振り返るコンテンツのほか、人気商品ランキングやコンテストなど、スペシャルコンテンツをご覧いただけます。" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="ダイソー 50周年記念サイト" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://daiso50th.com/" />
+  <meta property="og:image" content="https://daiso50th.com/images/common/ogimage.png" />
+  <meta property="og:site_name" content="ダイソー 50周年記念サイト" />
+  <meta property="og:description" content="2022年、ダイソーは創業50周年を迎えます。特設サイトでは、50年の歴史の振り返るコンテンツのほか、人気商品ランキングやコンテストなど、スペシャルコンテンツをご覧いただけます。" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@daiso_50th" />
+
+  <!-- ファビコン -->
+  <link rel="icon" href="/favicon.png">
+  <!-- css -->
+  <link rel="stylesheet" href="css/slick.css" />
+  <link rel="stylesheet" href="css/slick-theme.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script defer type="text/javascript" src="js/slick.min.js"></script>
+  <script defer type="text/javascript" src="js/script.js"></script>
+  <script defer type="text/javascript" src="js/top.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-21717545-15"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-21717545-15");
+  </script>
+</head>
+
+<body class="body" id="js-body">
+
+  <header class="move-header">
+    <div class="move-header__inner">
+      <div class="move-header__logo">
+        <a href="#">
+          <img src="images/common/header-move-logo.png" alt="">
+        </a>
+        <p class="move-header__title u-desktop">50周年記念サイト</p>
+      </div>
+      <div class="move-header__btn drawer-btn js-drawer-btn">
+        <span class="drawer-btn__line"></span>
+        <span class="drawer-btn__line"></span>
+        <span class="drawer-btn__line"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========= video ========= -->
+  <div id="video-area" class="video-area u-desktop">
+
+    <video id="video" class="u-desktop" playsinline muted autoplay>
+      <!--
+      poster：動画ファイルが利用できない環境で代替表示される画像
+      webkit-playsinline：iOS 9までのSafari用インライン再生指定
+      playsinline：iOS 10以降のSafari用インライン再生指定
+      muted：音声をミュートさせる
+      autoplay：動画を自動再生させる
+      loop：動画をループさせる
+      controls：コントロールバーを表示する
+      -->
+      <source class="u-desktop" src="video/opmov_pc.mp4" type="video/mp4">
+      <p>動画を再生できる環境ではありません。</p>
+    </video>
+    <!--/video-area-->
+
+    <video class="u-mobile" id="video" playsinline muted autoplay>
+      <!--
+        poster：動画ファイルが利用できない環境で代替表示される画像
+        webkit-playsinline：iOS 9までのSafari用インライン再生指定
+        playsinline：iOS 10以降のSafari用インライン再生指定
+        muted：音声をミュートさせる
+        autoplay：動画を自動再生させる
+        loop：動画をループさせる
+        controls：コントロールバーを表示する
+    -->
+      <source class="u-mobile" src="video/opmov_sp.mp4" type="video/mp4">
+      <p>動画を再生できる環境ではありません。</p>
+    </video>
+    <button id="btn_skip">SKIP<img class="arrow" src="images/common/next.png" alt=""></button>
+
+  </div>
+
+  <div class="body-bg right inner">
+    <img class="body-bg__arrow right" src="images/common/arrow-bg-sp.png" alt="" />
+  </div>
+  <div class="body-bg left inner">
+    <img class="body-bg__arrow left" src="images/common/arrow-bg-sp.png" alt="" />
+  </div>
+  <header class="header">
+    <div class="header__inner inner">
+      <picture class="header__logo">
+        <source srcset="images/common/logo_pc.png" media="(min-width: 768px)" />
+        <img src="images/common/logo_sp.png" alt="" class="" />
+      </picture>
+      <h1 class="header__title">
+        DAISO <span class="header__title--strong">50th</span>
+        <br class="u-mobile" />
+        ANNIVERSARY
+      </h1>
+    </div>
+    <!-- <div class="header__language js-language-btn">
+        <img src="images/common/language.png" alt="" />
+        <span class="header__language-text u-desktop">Language</span>
+      </div> -->
+  </header>
+  <!-- /.header -->
+
+  <nav class="language-menu">
+    <div class="language-menu__overlay js-language-overlay"></div>
+    <div class="language-menu__lists-area">
+      <div class=""></div>
+      <img class="language-menu__back" src="images/common/language-menu_back.png" alt="" />
+      <div class="language-menu__img">
+        <img src="images/common/language.png" alt="" />
+        <span class="language-menu__img-text">Language</span>
+      </div>
+      <ul class="language-menu__lists">
+        <li class="language-menu__list language-menu__list--ja">
+          <a href="#"> 日本語 </a>
+        </li>
+        <li class="language-menu__list">
+          <a href="#">English</a>
+        </li>
+        <li class="language-menu__list">
+          <a href="#">繁体字</a>
+        </li>
+        <li class="language-menu__list">
+          <a href="#">簡体字</a>
+        </li>
+        <li class="language-menu__list">
+          <a href="#">Philippines</a>
+        </li>
+        <li class="language-menu__list">
+          <a href="#">Spain</a>
+        </li>
+        <li class="language-menu__list">
+          <a href="#">Portugal</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- /.language-menu -->
+
+  <div class="drawer-btn js-drawer-btn">
+    <span class="drawer-btn__line"></span>
+    <span class="drawer-btn__line"></span>
+    <span class="drawer-btn__line"></span>
+  </div>
+  <!-- /.drawer-btn -->
+
+  <nav class="drawer-menu u-desktop">
+    <div class="drawer-menu__inner">
+      <div class="drawer-menu__icon-wrapper">
+        <a href="#">
+          <img class="drawer-menu__img" src="images/common/drawer-icon_pc.png" alt="" />
+        </a>
+
+        <p class="drawer-menu__icons-title u-desktop">FOLLOW US</p>
+        <ul class="drawer-menu__icons">
+          <li class="drawer-menu__icon">
+            <a href="https://www.instagram.com/daiso_50th/" target="_blank">
+              <img src="images/common/instagram_sp.png" alt="instagram" />
+            </a>
+          </li>
+          <li class="drawer-menu__icon">
+            <a href="https://twitter.com/daiso_50th" target="_blank">
+              <img src="images/common/twitter_sp.png" alt="twitter" />
+            </a>
+          </li>
+          <li class="drawer-menu__icon">
+            <a href="https://page.line.me/499acehi?openQrModal=true" target="_blank">
+              <img class="drawer-menu__message" src="images/common/line_sp.png" alt="line" />
+            </a>
+          </li>
+        </ul>
+        <div class="drawer-menu__sub-links">
+          <a class="drawer-menu__sub-link" href="https://www.daiso-sangyo.co.jp/privacy" target="_blank">プライバシーポリシー</a>
+          <a class="drawer-menu__sub-link" href="https://www.daiso-sangyo.co.jp/volume/terms" target="_blank">利用規約</a>
+          <a class="drawer-menu__sub-link" href="https://www.daiso-sangyo.co.jp/specfic"
+            target="_blank">特定商取引法に基づく表記</a>
+          <a class="drawer-menu__sub-link" href="https://www.daiso-sangyo.co.jp/" target="_blank">ダイソー コーポレートサイト
+          </a>
+        </div>
+      </div>
+      <!-- <div class="drawer-menu__head">
+        <a href="/" class="drawer-menu__home">
+          HOME
+          <span class="drawer-menu__sub-home"> トップページ </span>
+        </a>
+      </div> -->
+      <ul class="drawer-menu__links">
+        <li class="drawer-menu__link drawer-menu-link btn">
+          <a href="index.html" class="btn__text">
+            <p class="drawer-menu-link__text">
+              HOME
+              <span class="drawer-menu-link__sub-text">トップページ</span>
+            </p>
+          </a>
+        </li>
+        <li class="drawer-menu__link drawer-menu-link btn">
+          <a href="top-message/index.html" class="btn__text">
+            <p class="drawer-menu-link__text">
+              TOP MESSAGE
+              <span class="drawer-menu-link__sub-text">社長メッセージ</span>
+            </p>
+          </a>
+        </li>
+        <li class="drawer-menu__link drawer-menu-link btn">
+          <a href="history/index.html" class="btn__text">
+            <p class="drawer-menu-link__text">
+              HISTORY
+              <span class="drawer-menu-link__sub-text">大創・大回想〜あの時大創は…〜</span>
+            </p>
+          </a>
+        </li>
+        <!-- <li class="drawer-menu__link drawer-menu-link">
+            <a href="">
+              <p class="drawer-menu-link__text">
+                INTERVIEW
+                <span class="drawer-menu-link__sub-text">インタビュー</span>
+              </p>
+            </a>
+          </li>
+          <li class="drawer-menu__link drawer-menu-link">
+            <a href="">
+              <p class="drawer-menu-link__text">
+                SUSTAINABILITY
+                <span class="drawer-menu-link__sub-text">サステナビリティ</span>
+              </p>
+            </a>
+          </li>
+          <li class="drawer-menu__link drawer-menu-link">
+            <a href="">
+              <p class="drawer-menu-link__text">
+                MANIFEST
+                <span class="drawer-menu-link__sub-text">マニフェスト</span>
+              </p>
+            </a>
+          </li> -->
+        <li class="drawer-menu__link drawer-menu-link btn">
+          <a href="info/index.html" class="btn__text">
+            <p class="drawer-menu-link__text ">
+              INFO
+              <span class="drawer-menu-link__sub-text">お知らせ</span>
+            </p>
+          </a>
+        </li>
+      </ul>
+      <div class="drawer-menu__lists">
+        <!-- <img src="images/common/drawer-menu_message_pc.png" alt="" />
+          <div class="drawer-menu__list">
+            <a href="#">
+              <span class="drawer__list-text">
+                ダイソーれたU-15<br />
+                新入社員プロジェクト
+              </span>
+              <img src="images/common/right.png" alt="" />
+            </a>
+          </div>
+          <div class="drawer-menu__list">
+            <a href="#">
+              <span class="drawer__list-text">ダイソー選挙</span>
+              <img src="images/common/right.png" alt="" />
+            </a>
+          </div>
+          <div class="drawer-menu__list">
+            <a href="#">
+              <span class="drawer__list-text">DIYコンテスト</span>
+              <img src="images/common/right.png" alt="" />
+            </a>
+          </div>
+          <div class="drawer-menu__list">
+            <a href="#">
+              <span class="drawer__list-text">女子駅伝部</span>
+              <img src="images/common/right.png" alt="" />
+            </a>
+          </div>
+          <div class="drawer-menu__list">
+            <a href="#">
+              <span class="drawer__list-text">ありがとうの言葉</span>
+              <img src="images/common/right.png" alt="" />
+            </a>
+          </div>
+          <div class="drawer-menu__list">
+            <a href="#">
+              <span class="drawer__list-text">ブランドロイヤリティ</span>
+              <img src="images/common/right.png" alt="" />
+            </a>
+          </div> -->
+      </div>
+    </div>
+    <p class="drawer-menu__copyright">
+      Copyright &copy; Daiso-sangyo All rights reserved.
+    </p>
+  </nav>
+
+  <!-- /.drawer-menu -->
+  <nav class="drawer-menu u-mobile">
+    <img class="drawer-menu__img" src="images/history/header_logo.png" alt="" />
+    <div class="drawer-menu__head">
+      <a href="index.html">
+        <p class="drawer-menu__home">
+          HOME
+          <span class="drawer-menu__sub-home"> トップページ </span>
+        </p>
+      </a>
+      <ul class="drawer-menu__icons">
+        <li class="drawer-menu__icon">
+          <a href="https://www.instagram.com/daiso_50th/" target="_blank">
+            <img src="images/common/instagram_sp.png" alt="instagram" />
+          </a>
+        </li>
+        <li class="drawer-menu__icon">
+          <a href="https://twitter.com/daiso_50th" target="_blank">
+            <img src="images/common/twitter_sp.png" alt="twitter" />
+          </a>
+        </li>
+        <li class="drawer-menu__icon">
+          <a href="https://page.line.me/499acehi?openQrModal=true" target="_blank">
+            <img class="drawer-menu__message" src="images/common/line_sp.png" alt="line" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- <img
+        class="drawer-menu__message"
+        src="images/common/drawer_message.png"
+        alt=""
+      /> -->
+    <!-- <ul class="drawer-menu__lists">
+        <li class="drawer-menu__list">
+          <a href="#">
+            <span class="drawer__list-text">
+              ダイソーれたU-15<br />
+              新入社員プロジェクト
+            </span>
+            <img src="images/common/right.png" alt="" />
+          </a>
+        </li>
+        <li class="drawer-menu__list">
+          <a href="#">
+            <span class="drawer__list-text">ダイソー選挙</span>
+            <img src="images/common/right.png" alt="" />
+          </a>
+        </li>
+        <li class="drawer-menu__list">
+          <a href="#">
+            <span class="drawer__list-text">DIYコンテスト</span>
+            <img src="images/common/right.png" alt="" />
+          </a>
+        </li>
+        <li class="drawer-menu__list">
+          <a href="#">
+            <span class="drawer__list-text">女子駅伝部</span>
+            <img src="images/common/right.png" alt="" />
+          </a>
+        </li>
+        <li class="drawer-menu__list">
+          <a href="#">
+            <span class="drawer__list-text">ありがとうの言葉</span>
+            <img src="images/common/right.png" alt="" />
+          </a>
+        </li>
+        <li class="drawer-menu__list">
+          <a href="#">
+            <span class="drawer__list-text">ブランドロイヤリティ</span>
+            <img src="images/common/right.png" alt="" />
+          </a>
+        </li>
+      </ul> -->
+    <ul class="drawer-menu__links">
+      <li class="drawer-menu__link drawer-menu-link btn">
+        <a href="top-message/index.html" class="btn__text">
+          <p class="drawer-menu-link__text">
+            TOP MESSAGE
+            <span class="drawer-menu-link__sub-text">社長メッセージ</span>
+          </p>
+        </a>
+      </li>
+      <li class="drawer-menu__link drawer-menu-link btn">
+        <a href="history/index.html" class="btn__text">
+          <p class="drawer-menu-link__text">
+            HISTORY
+            <span class="drawer-menu-link__sub-text">大創・大回想</span>
+          </p>
+        </a>
+      </li>
+      <!-- <li class="drawer-menu__link drawer-menu-link">
+          <a href="">
+            <p class="drawer-menu-link__text">
+              INTERVIEW
+              <span class="drawer-menu-link__sub-text">インタビュー</span>
+            </p>
+          </a>
+        </li>
+        <li class="drawer-menu__link drawer-menu-link">
+          <a href="">
+            <p class="drawer-menu-link__text">
+              SUSTAINABILITY
+              <span class="drawer-menu-link__sub-text">サステナビリティ</span>
+            </p>
+          </a>
+        </li>
+        <li class="drawer-menu__link drawer-menu-link">
+          <a href="">
+            <p class="drawer-menu-link__text">
+              MANIFEST
+              <span class="drawer-menu-link__sub-text">マニフェスト</span>
+            </p>
+          </a>
+        </li> -->
+      <li class="drawer-menu__link drawer-menu-link btn">
+        <a href="info/index.html" class="btn__text">
+          <p class="drawer-menu-link__text">
+            INFO
+            <span class="drawer-menu-link__sub-text">お知らせ</span>
+          </p>
+        </a>
+      </li>
+    </ul>
+
+    <a class="drawer-menu__sub-link" href="https://www.daiso-sangyo.co.jp/privacy" target="_blank">プライバシーポリシー</a>
+    <a class="drawer-menu__sub-link" href="https://www.daiso-sangyo.co.jp/volume/terms" target="_blank">利用規約</a>
+    <a class="drawer-menu__sub-link" href="https://www.daiso-sangyo.co.jp/specfic" target="_blank">特定商取引法に基づく表記</a>
+    <a class="drawer-menu__sub-link" href="https://www.daiso-sangyo.co.jp/" target="_blank">ダイソー コーポレートサイト</a>
+  </nav>
+  <!-- /.drawer-menu -->
+
+
+
+  <div class="top-scroll">
+    <span class="top-scroll__text">TOP</span>
+  </div>
+  <!-- /.top-scroll -->
+
+  <div class="main-visual l-main-visual">
+    <div class="main-visual__inner inner">
+      <div class="main-visual__slider-wrapper">
+        <ul class="main-visual__slider js-top-slider">
+          <li class="main-visual__img no-hover">
+            <picture class="">
+              <source srcset="images/top/main_img1_pc.png" media="(min-width: 768px)" />
+              <img src="images/top/main_img1_sp.png" alt="" class="" />
+            </picture>
+            <!-- <p class="new main-visual__img-icon u-mobile">NEW</p> -->
+          </li>
+          <li class="main-visual__img">
+            <a href="info/2022030101.html">
+              <picture class="">
+                <source srcset="images/top/zouryou_pc.png" media="(min-width: 768px)" />
+                <img src="images/top/zouryou.png" alt="" class="" />
+              </picture>
+            </a>
+          </li>
+          <li class="main-visual__img">
+            <a class="u-mobile" href="paypay://internalembed?url=https://www.paypay.ne.jp/portal/transaction/coupon-corner/coupons/100134696" target="_blank">
+              <picture class="">
+                <img src="images/top/5per.png" alt="" class="" />
+              </picture>
+            </a>
+            <a class="u-desktop" href="https://paypay.ne.jp/event/paypay-matsuri/" target="_blank">
+              <picture class="">
+                <img src="images/top/5per_pc.png" alt="" class="" />
+              </picture>
+            </a>
+          </li>
+          <li class="main-visual__img">
+            <a href="history/index.html">
+              <picture class="">
+                <source srcset="images/top/main_img2_pc.png" media="(min-width: 768px)" />
+                <img src="images/top/main_img2_sp.png" alt="" class="" />
+              </picture>
+              <!-- <p class="update main-visual__img-icon">
+                03.15<br />
+                update
+              </p> -->
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main-visual__count count-down">
+        <p class="count-down__title">スペシャル企画発表まで、あと</p>
+        <p class="count-down__timer">
+          <span class="count-down__date"></span>日
+          <!-- <span class="count-down__hour"></span>時間
+          <span class="count-down__min"></span>分
+          <span class="count-down__sec"></span>秒 -->
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- /.main-visual -->
+
+  <div class="banner-area l-banner-area">
+    <div class="inner">
+      <ul class="banner-area__cards">
+        <li class="banner-area__card">
+          <a href="https://standardproducts.jp/" target="_blank">
+            <img src="images/top/standard.png" alt="" />
+          </a>
+        </li>
+        <li class="banner-area__card">
+          <a href="https://www.threeppy.jp/" target="_blank">
+            <img src="images/top/threeppy.png" alt="" />
+          </a>
+        </li>
+        <!-- <li class="banner-area__card">
+            <a href="https://www.coucou.co.jp/" target="_blank">
+              <img src="images/top/coucou.png" alt="" />
+            </a>
+          </li>
+          <li class="banner-area__card">
+            <a href="https://www.daiso-syuppan.com/" target="_blank">
+              <img src="images/top/publishing.png" alt="" />
+            </a>
+          </li> -->
+      </ul>
+    </div>
+  </div>
+  <!-- /.banner-area -->
+
+  <section class="info l-info anm-up">
+    <div class="info__inner inner">
+      <h2 class="info__title top-section-title">INFO</h2>
+      <ul class="info__lists">
+
+        <li class="info__list info-list">
+          <a href="info/2022030101.html">
+            <div class="info-list__label">
+              <p class="info-list__category">キャンペーン</p>
+              <span class="info-list__date">2022.03.01
+              </span>
+            </div>
+            <p class="info-list__content">
+              おかげさまで50周年　増量キャンペーン実施中！
+            </p>
+          </a>
+        </li>
+
+        <li class="info__list info-list u-desktop">
+          <a href="https://paypay.ne.jp/event/paypay-matsuri/" target="_blank">
+            <div class="info-list__label">
+              <p class="info-list__category">
+                キャンペーン
+              </p>
+              <span class="info-list__date">2022.03.01</span>
+            </div>
+            <p class="info-list__content">
+              ダイソーでお買い物するなら「PayPay」でお得に！
+            </p>
+          </a>
+        </li>
+
+        <li class="info__list info-list u-mobile">
+          <a href="paypay://internalembed?url=https://www.paypay.ne.jp/portal/transaction/coupon-corner/coupons/100134696" target="_blank">
+            <div class="info-list__label">
+              <p class="info-list__category">
+                キャンペーン
+              </p>
+              <span class="info-list__date">2022.03.01</span>
+            </div>
+            <p class="info-list__content">
+              ダイソーでお買い物するなら「PayPay」でお得に！
+            </p>
+          </a>
+        </li>
+
+        <li class="info__list info-list">
+          <a>
+            <div class="info-list__label">
+              <p class="info-list__category">新着情報</p>
+              <span class="info-list__date">2022.03.01</span>
+            </div>
+            <p class="info-list__content no-hover">
+              創業50周年記念サイトを公開しました。
+            </p>
+          </a>
+        </li>
+      </ul>
+
+      <div class="absolute">
+        <a href="info/index.html" class="info__tab u-desktop">お知らせ一覧</a>
+      </div>
+    </div>
+    <a href="info/index.html" class="info__tab u-mobile">お知らせ一覧</a>
+  </section>
+
+
+  <div class="message-wrapper">
+    <section class="message l-message anm-up">
+      <div class="inner">
+        <h2 class="message__title top-section-title">MESSAGE</h2>
+        <p class="message__message">
+          おかげさまで私たちダイソーは、<br />
+          創業50周年を迎えました。
+        </p>
+        <p class="message__text">
+          ワンプライスだから、いつもより買える。 <br class="u-mobile">ワンプライスだから、トライできる。 <br />
+          ワンプライスだから気軽に買ってみたら、<br class="u-mobile">毎⽇の暮らしが変わった。 <br />
+          <span class="message__text-in">ワンプライスには⼈⽣を豊かにする無限の⼒がある。</span><br />
+          私たちは50年、変わらない思いです。<br />
+          だからこそ私たちは、こんなにあるんだ!<br class="u-mobile">　という驚きや、<br class="u-desktop">
+          こんなものまであるんだ!<br class="u-mobile">　という発⾒の喜びで、<br class="u-mobile">人々の豊かな暮らしに貢献したい。<br />
+          <span class="message__text-in">だんぜん多い品揃えで、</span>だんぜん⾼いクオリティで、<br class="u-mobile">だんぜん楽しいアイデアで。 <br />
+          ダイソーは、ワンプライスの⼒で、買いものを、<br class="u-mobile"> 暮らしを、世の中を、<br class="u-desktop">
+          これからも、<br class="u-mobile">もっともっとワクワクさせていきます。
+        </p>
+      </div>
+      <img src="images/common/track.png" alt="" class="message__track slide-left" />
+    </section>
+  </div>
+  <!-- /.message -->
+
+  <!-- <section class="special l-special">
+      <div class="inner">
+        <img src="images/top/special.png" alt="" class="special__catch" />
+        <h2 class="special__title top-section-title">SPECIAL</h2>
+        <ul class="special__cards">
+          <li class="special__card card">
+            <a href="">
+              <picture>
+                <source
+                  srcset="images/top/special-dammy_pc.png"
+                  media="(min-width: 768px)"
+                />
+                <img src="images/common/dammy.png" alt="" class="" />
+              </picture>
+              <p class="card__head">ダイソーれたU-15新入社員プロジェクト</p>
+              <p class="card__text">
+                この文章はダミーですこの文章はダミーです20w
+              </p>
+            </a>
+            <p class="update">
+              03.15<br />
+              update
+            </p>
+          </li>
+          <li class="special__card card">
+            <a href="">
+              <picture>
+                <source
+                  srcset="images/top/special-dammy_pc.png"
+                  media="(min-width: 768px)"
+                />
+                <img src="images/common/dammy.png" alt="" class="" />
+              </picture>
+              <p class="card__head">ダイソー選挙</p>
+              <p class="card__text">
+                この文章はダミーですこの文章はダミーです20w
+              </p>
+            </a>
+          </li>
+          <li class="special__card card">
+            <a href="">
+              <picture>
+                <source
+                  srcset="images/top/special-dammy_pc.png"
+                  media="(min-width: 768px)"
+                />
+                <img src="images/common/dammy.png" alt="" class="" />
+              </picture>
+              <p class="card__head">DIYコンテスト</p>
+              <p class="card__text">
+                この文章はダミーですこの文章はダミーです20w
+              </p>
+            </a>
+          </li>
+          <li class="special__card card">
+            <a href="">
+              <picture>
+                <source
+                  srcset="images/top/joshi-ekiden_pc.png"
+                  media="(min-width: 768px)"
+                />
+                <img src="images/top/joshi-ekiden.png" alt="" class="" />
+              </picture>
+              <p class="card__head">女子駅伝部</p>
+              <p class="card__text">
+                この文章はダミーですこの文章はダミーです20w
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section> -->
+  <!-- /.special -->
+
+  <section class="contents l-contents">
+    <div class="inner">
+      <h2 class="contents__title top-section-title">CONTENTS</h2>
+      <ul class="contents__items">
+        <li class="contents__item card anm-up">
+          <a href="history/index.html">
+            <div class="contents__img card__img">
+              <img class="u-mobile" src="images/top/2.png" alt="" />
+              <img class="u-desktop" src="images/top/daiso-taikaiso.jpg" alt="" />
+            </div>
+            <p class="card__head">
+              大創・大回想<br class="u-desktop">
+              〜あの時大創は…〜
+            </p>
+            <p class="card__text">
+              ダイソーの50年の歩みを振り返る歴史コンテンツ
+            </p>
+          </a>
+        </li>
+        <li class="contents__item card anm-up">
+          <a href="top-message/index.html">
+            <div class="contents__img">
+              <img class="card__img" src="images/top/top-message.png" alt="" />
+            </div>
+            <p class="card__head">社長メッセージ</p>
+            <p class="card__text">
+              代表取締役社長 矢野 靖二によるメッセージ
+            </p>
+          </a>
+        </li>
+        <!-- <li class="contents__item card">
+            <a href="">
+              <img
+                class="card__img"
+                src="images/top/sustainability.png"
+                alt=""
+              />
+              <p class="card__head">サステナビリティ</p>
+              <p class="card__text">
+                この文章はダミーですこの文章はダミーです20w
+              </p>
+            </a>
+          </li>
+          <li class="contents__item card">
+            <a href="">
+              <img class="card__img" src="images/top/interview.png" alt="" />
+              <p class="card__head">社員インタビュー</p>
+              <p class="card__text">
+                この文章はダミーですこの文章はダミーです20w
+              </p>
+            </a>
+          </li>
+          <li class="contents__item card u-mobile">
+            <a href="">
+              <img
+                class="card__img"
+                src="images/top/contents-dammy.png"
+                alt=""
+              />
+              <p class="card__head">●●●●●●●●</p>
+              <p class="card__text">
+                この文章はダミーですこの文章はダミーです20w
+              </p>
+            </a>
+          </li> -->
+      </ul>
+    </div>
+  </section>
+  <!-- /.contents -->
+
+  <div class="follow-us-wrapper">
+    <section class="follow-us">
+      <div class="follow-us__inner inner">
+        <div class="follow-us__title-wrapper">
+          <h2 class="follow-us__title top-section-title">FOLLOW US</h2>
+          <p class="follow-us__message">フォローしてね！</p>
+        </div>
+        <div class="follow-us__icon-wrapper">
+          <div class="follow-us__icons">
+            <a href="https://www.instagram.com/daiso_50th/" target="_blank" class="follow-us__icon">
+              <picture>
+                <source srcset="images/common/instagram_pc.png" media="(min-width: 768px)" />
+                <img src="images/common/instagram_sp.png" alt="" />
+              </picture>
+            </a>
+            <a href="https://twitter.com/daiso_50th" target="_blank" class="follow-us__icon">
+              <picture>
+                <source srcset="images/common/twitter_pc.png" media="(min-width: 768px)" />
+                <img src="images/common/twitter_sp.png" alt="twitter" />
+              </picture>
+            </a>
+            <a href="https://page.line.me/499acehi?openQrModal=true" target="_blank" class="follow-us__icon">
+              <picture>
+                <source srcset="images/common/line_pc.png" media="(min-width: 768px)" />
+                <img src="images/common/line_sp.png" alt="line" />
+              </picture>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- /.follow-us -->
+
+  <footer class="footer">
+    <div class="footer__inner inner">
+      <picture class="footer__logo">
+        <source srcset="images/common/logo_pc.png" media="(min-width: 768px)" />
+        <img src="images/common/logo_sp.png" alt="" class="" />
+      </picture>
+      <ul class="footer__nav-list">
+        <li class="footer__nav">
+          <a href="https://www.daiso-sangyo.co.jp/privacy" target="_blank">
+            プライバシーポリシー
+          </a>
+        </li>
+        <span>　／　</span>
+        <li class="footer__nav">
+          <a href="https://www.daiso-sangyo.co.jp/volume/terms" target="_blank">
+            利用規約
+          </a>
+        </li>
+        <span>　／　</span><br class="u-mobile" />
+        <li class="footer__nav">
+          <a href="https://www.daiso-sangyo.co.jp/specfic" target="_blank">
+            特定商取引法に基づく表記
+          </a>
+        </li>
+        <span>　／　</span>
+        <li class="footer__nav">
+          <a href="https://www.daiso-sangyo.co.jp/" target="_blank">
+            ダイソー コーポレートサイト
+          </a>
+        </li>
+      </ul>
+      <p class="copyright">
+        Copyright &copy; Daiso-sangyo All rights reserved.
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+@use "global" as *;
+
+
+.slick-list {
+  overflow: visible !important;
+}
+
+.slick-next:before {
+  display: none !important;
+}
+
+.slick-dots li button:before {
+  top: rem(10) !important;
+  content: "" !important;
+  width: rem(8) !important;
+  height: rem(8) !important;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active button:before {
+  background-color: $pink;
+}
+
+.slick-dots {
+  @include mq("md") {
+    left: 33%;
+    bottom: rem(-45) !important;
+  }
+}
+

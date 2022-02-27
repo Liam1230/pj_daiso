@@ -1,0 +1,28 @@
+body {
+  padding-top: rem(30);
+  padding-top: rem(30);
+  position: relative;
+  font-family: "Noto Sans JP", sans-serif;
+  z-index: -9999;
+}
+
+.u-desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .u-desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .u-mobile {
+    display: none;
+  }
+}
+
+.l-main-visual {
+  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
+}
+/*# sourceMappingURL=l-main-visual.css.map */
