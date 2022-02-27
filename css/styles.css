@@ -1640,6 +1640,7 @@ select::-ms-expand {
 .h-scroll {
   background-color: #F2157F;
   position: fixed;
+  height: 100%;
   z-index: 100;
   overflow: auto;
   display: -webkit-box;
@@ -2006,8 +2007,7 @@ select::-ms-expand {
 }
 
 .section {
-  height: 100vh;
-  /* Avoid Chrome to see Safari hack */
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2022,12 +2022,6 @@ select::-ms-expand {
   position: relative;
   padding: 0 50vw;
   overflow: hidden;
-}
-@supports (-webkit-touch-callout: none) {
-  .section body {
-    /* The hack for Safari */
-    height: -webkit-fill-available;
-  }
 }
 
 .header {
