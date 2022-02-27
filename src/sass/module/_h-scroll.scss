@@ -302,6 +302,13 @@
 
 .section {
   height: 100vh;
+  /* Avoid Chrome to see Safari hack */
+  @supports (-webkit-touch-callout: none) {
+    body {
+      /* The hack for Safari */
+      height: -webkit-fill-available;
+    }
+  }
   display: flex;
   flex-direction: column;
   align-items: center;
