@@ -1787,11 +1787,12 @@ select::-ms-expand {
 
 .h-history__label-top {
   position: fixed;
-  left: 0;
+  left: -10px;
+  left: -0.625rem;
   bottom: 34.375vh;
   z-index: 103;
-  width: 40px;
-  width: 2.5rem;
+  width: 50px;
+  width: 3.125rem;
   height: 57vh;
   border-radius: 0 1.25rem 0 0;
   border: 1px solid #fff;
@@ -1813,11 +1814,12 @@ select::-ms-expand {
 
 .h-history__label-bottom {
   position: fixed;
-  left: 0;
+  left: -10px;
+  left: -0.625rem;
   bottom: 0;
   z-index: 103;
-  width: 40px;
-  width: 2.5rem;
+  width: 50px;
+  width: 3.125rem;
   height: 34.375vh;
   border: 1px solid #F2157F;
   border-top: none;
