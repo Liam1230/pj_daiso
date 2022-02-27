@@ -38,7 +38,7 @@
     z-index: 2;
     display: block !important;
     width: rem(50);
-    height: rem(27);
+    height: rem(50);
     position: absolute;
     bottom: rem(-60);
     filter: none !important;
@@ -175,6 +175,7 @@
     transform: translateX(10px);
   }
 }
+
 .main-visual__next::after {
   display: none !important;
 }

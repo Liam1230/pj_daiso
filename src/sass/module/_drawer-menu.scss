@@ -26,7 +26,7 @@
   width: 100%;
   z-index: 9996;
   padding: rem(79) rem(25) rem(79) rem(20);
-  overflow: hidden;
+  overflow: scroll;
   clip-path: circle(5px at 110% -10%);
   -webkit-clip-path: circle(5px at 110% -10%);
   transition: all 0.5s ease-out;

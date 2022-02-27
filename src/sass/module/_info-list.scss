@@ -33,7 +33,7 @@
   @include mq("md") {
     transition: color 0.3s;
     display: inline-block;
-    &:hover:not(.no-hover) {
+    &:hover {
       color: $pink;
     }
   }

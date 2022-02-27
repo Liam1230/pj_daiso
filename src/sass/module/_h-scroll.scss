@@ -14,6 +14,7 @@
 }
 
 .history-body {
+  background-color: $pink;
   position: relative;
   z-index: -100;
 }
@@ -217,33 +218,34 @@
 
 .history-scroll__start-btn {
   // display: none;
-  z-index: 9002;
-  // position: absolute;
-  position: fixed;
-  left: calc(50% - (rem(44) / 2));
-  bottom: 40vh;
-  bottom: calc(34.375vh + (rem(44) / 2));
-  content: ">";
-  line-height: rem(44);
-  text-align: center;
-  display: inline-block;
-  background-color: $pink;
-  width: rem(44);
-  height: rem(44);
-  border-radius: 50%;
-  transition: 0.3s;
-  cursor: pointer;
-
-  animation-name: tobig;
-  animation-fill-mode: backwards;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in;
-  animation-delay: 2s;
-  animation-direction: normal;
-
-  border: 2px solid $white;
   @include mq("md") {
+    z-index: 9002;
+    position: fixed;
+    left: calc(50% - (rem(44) / 2));
+    bottom: calc(34.375vh + (rem(44) / 2));
+    content: ">";
+    line-height: rem(44);
+    text-align: center;
+    display: inline-block;
+    background-color: $pink;
+    width: rem(44);
+    height: rem(44);
+    border-radius: 50%;
     border: 1rem solid $white;
+    transition: 0.3s;
+    cursor: pointer;
+
+    animation-name: tobig;
+    animation-fill-mode: backwards;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-direction: normal;
+
+    border: 2px solid $white;
+    @include mq("md") {
+      border: 1rem solid $white;
+    }
   }
 }
 
